@@ -1,0 +1,21 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
++incdir+tb_classes
+-loadpli
+/apps/Infrasys/apps/incisiv/15.20.015/linuxamd/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/64bit/libuvmpli.so:uvm_pli_boot
+-ACCESS
+rwc
++UVM_TESTNAME=cpwr_test
+-MESSAGES
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdl.var
+-WORK
+worklib
+-HASXLMODE

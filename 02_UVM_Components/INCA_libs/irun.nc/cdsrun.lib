@@ -1,0 +1,2 @@
+SOFTINCLUDE /apps/Infrasys/apps/incisiv/15.20.015/linuxamd/tools/inca/files/cds.lib
+define worklib ../worklib

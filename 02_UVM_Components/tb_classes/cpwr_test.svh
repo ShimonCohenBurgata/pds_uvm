@@ -1,6 +1,6 @@
 /* constant power test */
 
-class cpwr_test extends uvm_test;
+class cpwr_test extends random_test;
    `uvm_component_utils(cpwr_test)
 	
    cpwr_tester tester_h;

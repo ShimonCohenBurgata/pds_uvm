@@ -1,0 +1,16 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-clean
+-uvm
+-f
+tb.f
+-f
+dut.f
+-gui
+-access
+rwc
+-linedebug
++UVM_TESTNAME=cpwr_test
+-s
