@@ -1,1 +1,0 @@
-s1(20Jun2018:15:14:42):  irun -clean -uvm -f tb.f -f dut.f -gui -access rwc -linedebug +UVM_TESTNAME=cpwr_test -s 
