@@ -11,8 +11,12 @@ class prs_monitor extends uvm_component;
 	endfunction : new
 
 	function void build_phase(uvm_phase phase);
-		if(!uvm_config_db #(virtual pds_bfm)::get(null, "*", "class_bfm", bfm))
-			`uvm_fatal("PRS_MONITOR", "Faild to get bfm");
+		pds_agent_config pds_agent_config_h;
+		if(!uvm_config_db #(pds_agent_config)::get(this,"","config",pds_agent_config_h))
+			`uvm_fatal("PRS_MONITOR","Faild to get bfm");
+		bfm=pds_agent_config_h.bfm;
+
+		
 		ap=new("ap", this);
 	endfunction : build_phase
 

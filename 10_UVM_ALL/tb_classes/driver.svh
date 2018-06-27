@@ -11,8 +11,11 @@ class driver extends uvm_driver #(sequence_item);
 	endfunction : new
 
 	function void build_phase(uvm_phase phase);
-		if(!uvm_config_db #(virtual pds_bfm)::get(null,"*","class_bfm",bfm))
+		pds_agent_config pds_agent_config_h;
+		if(!uvm_config_db #(pds_agent_config)::get(this,"","config",pds_agent_config_h))
 			`uvm_fatal("DRIVER","Faild to get bfm");
+		bfm=pds_agent_config_h.bfm;
+
 	endfunction : build_phase
 
 	task run_phase(uvm_phase phase);
