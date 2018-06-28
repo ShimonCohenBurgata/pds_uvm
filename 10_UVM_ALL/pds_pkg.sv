@@ -5,8 +5,10 @@ package pds_pkg;
    parameter int numPorts=`numPorts;
 
 	`include "sequence_item.svh"
+	`include "cpwr_sequence_item.svh"
 	 typedef uvm_sequencer #(sequence_item) sequencer;
 	`include "random_sequence.svh"
+	`include "cpwr_sequence.svh"
 	
    	`include "env_config.svh"
 	`include "pds_agent_config.svh"
@@ -22,5 +24,6 @@ package pds_pkg;
    	`include "env.svh"
 	`include "pds_base_test.svh"
 	`include "random_test.svh"
+	`include "cpwr_test.svh"
 
 endpackage : pds_pkg

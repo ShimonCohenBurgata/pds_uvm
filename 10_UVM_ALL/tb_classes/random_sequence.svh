@@ -1,13 +1,12 @@
 class random_sequence extends uvm_sequence #(sequence_item);
 	`uvm_object_utils(random_sequence)
 
-
+	sequence_item prs;
 	function new(string name="random_sequence");
 		super.new(name);
 	endfunction : new
 
 	task body();
-		sequence_item prs;
 
 		repeat (20) begin : random_loop
 			bit ok;

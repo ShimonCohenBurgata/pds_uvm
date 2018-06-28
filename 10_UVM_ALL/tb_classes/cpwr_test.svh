@@ -6,7 +6,7 @@ class cpwr_test extends pds_base_test;
    	endfunction : new
 
 	task run_phase(uvm_phase phase);
-      		cpwr_sequence_item cpwr;
+      		cpwr_sequence cpwr;
       		cpwr = new("cpwr");
 
       		phase.raise_objection(this);
